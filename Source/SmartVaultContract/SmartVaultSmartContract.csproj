@@ -46,8 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administration\Deplopyment\CheckContractDeployment.cs" />
-    <Compile Include="Administration\Ownership\CheckContractOwnerShip.cs" />
+    <Compile Include="Administration\ContractEnabled\CheckContractEnabled.cs" />
+    <Compile Include="Administration\ContractEnabled\DisableContract.cs" />
+    <Compile Include="Administration\ContractEnabled\EnableContract.cs" />
+    <Compile Include="Administration\Ownership\CheckCallOwnership.cs" />
+    <Compile Include="Administration\Ownership\CheckContractOwnership.cs" />
+    <Compile Include="Administration\Ownership\TakeContractOwnership.cs" />
     <Compile Include="SmartVaultContract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

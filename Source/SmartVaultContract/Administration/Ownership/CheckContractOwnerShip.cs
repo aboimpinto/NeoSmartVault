@@ -1,10 +1,10 @@
 ﻿namespace SmartWallet.Administration.Ownership
 {
-    public static class CheckContractOwnerShip
+    public static class CheckContractOwnership
     {
         public static bool IsMethod(string method)
         {
-            return method == "CheckOwnewShip";
+            return method == "CheckContractOwnership";
         }
 
         public static string Execute(object[] args)

@@ -7,3 +7,12 @@ C:\myDevelop\SmartVault\SmartVaultContract\obj\Debug\SmartVaultSmartContract.csp
 C:\myDevelop\SmartVault\SmartVaultContract\obj\Debug\SmartVaultSmartContract.csproj.CopyComplete
 C:\myDevelop\SmartVault\SmartVaultContract\obj\Debug\SmartWallet.dll
 C:\myDevelop\SmartVault\SmartVaultContract\obj\Debug\SmartWallet.pdb
+C:\myDevelop\NeoSmartVault\Source\SmartVaultContract\bin\Debug\nmap.bat
+C:\myDevelop\NeoSmartVault\Source\SmartVaultContract\bin\Debug\SmartWallet.dll
+C:\myDevelop\NeoSmartVault\Source\SmartVaultContract\bin\Debug\SmartWallet.pdb
+C:\myDevelop\NeoSmartVault\Source\SmartVaultContract\bin\Debug\Neo.SmartContract.Framework.dll
+C:\myDevelop\NeoSmartVault\Source\SmartVaultContract\obj\Debug\SmartVaultSmartContract.csprojAssemblyReference.cache
+C:\myDevelop\NeoSmartVault\Source\SmartVaultContract\obj\Debug\SmartVaultSmartContract.csproj.CoreCompileInputs.cache
+C:\myDevelop\NeoSmartVault\Source\SmartVaultContract\obj\Debug\SmartVaultSmartContract.csproj.CopyComplete
+C:\myDevelop\NeoSmartVault\Source\SmartVaultContract\obj\Debug\SmartWallet.dll
+C:\myDevelop\NeoSmartVault\Source\SmartVaultContract\obj\Debug\SmartWallet.pdb
