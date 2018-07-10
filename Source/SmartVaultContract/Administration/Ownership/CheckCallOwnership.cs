@@ -1,5 +1,4 @@
-﻿using Neo.SmartContract.Framework;
-using Neo.SmartContract.Framework.Services.Neo;
+﻿using Neo.SmartContract.Framework.Services.Neo;
 
 namespace SmartWallet.Administration.Ownership
 {
@@ -12,7 +11,7 @@ namespace SmartWallet.Administration.Ownership
 
         public static string Execute(object[] args)
         {
-            var address = args[0].ToString().ToScriptHash();
+            var address = (byte[])args[0];
 
             if (Runtime.CheckWitness(address))
             {
