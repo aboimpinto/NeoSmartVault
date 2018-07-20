@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Neo.SmartContract.Framework.Services.Neo;
 
 namespace SmartWallet.Administration.Ownership
 {
@@ -10,12 +6,17 @@ namespace SmartWallet.Administration.Ownership
     {
         public static bool IsMethod(string method)
         {
-            return method == "TakeOwnewship";
+            return method == "TakeContractOwnership";
         }
 
-        public static string Execute(object[] args)
+        public static object Execute(object[] args)
         {
-            return "";
+            var ownerAddress = (byte[])args[0];
+            if (!Runtime.CheckWitness(ownerAddress)) return false;
+
+            Storage.Put(Storage.CurrentContext, "ContractOwner", ownerAddress);
+
+            return true;
         }
     }
 }

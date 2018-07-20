@@ -10,16 +10,36 @@
     Height="450" 
     Width="800">
 
-    <Grid>
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </Window.Resources>
+
+    <Grid Margin="10">
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Button 
+        <Button Content="Refresh" Command="{Binding RefreshCommand}" Margin="10" />
+
+        <StackPanel 
+            Grid.Row="1" 
+            Orientation="Horizontal">
+            
+            <TextBlock Text="Is vault enable?" VerticalAlignment="Center" />
+            <Button Content="Enable" Margin="10 0 0 0" IsEnabled="{Binding CanEnableContract}" Command="{Binding EnableSmartVaultCommand}" />
+            <Button Content="Take ownership" Margin="10 0 0 0" IsEnabled="{Binding IsContractWithoutOwner}" Command="{Binding TakeOwnershipCommand}" />
+        </StackPanel>
+
+        <Grid Grid.Row="2" Visibility="{Binding IsContractEnable, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <TextBlock Text="Contract is enable" />
+        </Grid>
+
+        <!--<Button 
             Grid.Row="0" 
             Content="Check smart vault enable"
-            Command="{Binding CheckSmartVaultEnableCommand}"/>
+            Command="{Binding CheckSmartVaultEnableCommand}"/>-->
 
     </Grid>
 </Window>

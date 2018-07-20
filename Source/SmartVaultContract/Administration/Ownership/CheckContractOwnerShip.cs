@@ -1,4 +1,7 @@
-﻿namespace SmartWallet.Administration.Ownership
+﻿using Neo.SmartContract.Framework;
+using Neo.SmartContract.Framework.Services.Neo;
+
+namespace SmartWallet.Administration.Ownership
 {
     public static class CheckContractOwnership
     {
@@ -9,7 +12,14 @@
 
         public static string Execute(object[] args)
         {
-            return "";
+            var isContractOwned = Storage.Get(Storage.CurrentContext, "ContractOwner").AsString();
+
+            if (isContractOwned == "")
+            {
+                return "NOT_OWNED";
+            }
+
+            return "OWNED";
         }
     }
 }

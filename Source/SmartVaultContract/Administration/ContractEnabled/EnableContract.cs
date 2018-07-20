@@ -9,12 +9,13 @@ namespace SmartWallet.Administration.ContractEnabled
             return method == "EnableContract";
         }
 
-        public static string Execute(object[] args)
+        public static bool Execute(object[] args)
         {
-            // TODO: Only if some address own the Contract this can be executed.
+            var ownerAddress = Storage.Get(Storage.CurrentContext, "ContractOwner");
+            if (!Runtime.CheckWitness(ownerAddress)) return false;
 
             Storage.Put(Storage.CurrentContext, "ContractEnabled", "1");
-            return "Contract enabled.";
+            return true;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Neo.SmartContract.Framework;
+﻿using System;
+using Neo.SmartContract.Framework;
 using SmartWallet.Administration.ContractEnabled;
 using SmartWallet.Administration.Ownership;
 
@@ -6,7 +7,10 @@ namespace SmartWallet
 {
     public class SmartVaultContract : SmartContract
     {
-        public static string Main(string method, params object[] args)
+        // INPUT:   0710
+        // OUTPUT:  07
+
+        public static object Main(string method, params object[] args)
         {
             if (CheckContractEnabled.Execute(args) == "TRUE")
             {
@@ -31,20 +35,23 @@ namespace SmartWallet
                     return CheckContractEnabled.Execute(args);
                 }
 
+                if (CheckContractOwnership.IsMethod(method))
+                {
+                    return CheckContractOwnership.Execute(args);
+                }
+
                 if (CheckContractOwnership.Execute(args) == "OWNED")
                 {
                     if (EnableContract.IsMethod(method))
                     {
-                        var result = EnableContract.Execute(args);
-                        return result;
+                        return EnableContract.Execute(args);
                     }
                 }
                 else
                 {
                     if (TakeContractOwnership.IsMethod(method))
                     {
-                        var result = TakeContractOwnership.Execute(args);
-                        return result;
+                        return TakeContractOwnership.Execute(args);
                     }
                 }
             }

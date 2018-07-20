@@ -138,3 +138,10 @@ C:\myDevelop\NeoSmartVault\Source\SmartVault.WPF\obj\Debug\SmartVault.WPF.csproj
 C:\myDevelop\NeoSmartVault\Source\SmartVault.WPF\obj\Debug\SmartVault.WPF.csproj.CopyComplete
 C:\myDevelop\NeoSmartVault\Source\SmartVault.WPF\obj\Debug\SmartVault.WPF.exe
 C:\myDevelop\NeoSmartVault\Source\SmartVault.WPF\obj\Debug\SmartVault.WPF.pdb
+C:\myDevelop\NeoSmartVault\Source\SmartVault.WPF\bin\Debug\NeoModules.Core.pdb
+C:\myDevelop\NeoSmartVault\Source\SmartVault.WPF\bin\Debug\NeoModules.JsonRpc.Client.pdb
+C:\myDevelop\NeoSmartVault\Source\SmartVault.WPF\bin\Debug\NeoModules.KeyPairs.pdb
+C:\myDevelop\NeoSmartVault\Source\SmartVault.WPF\bin\Debug\NeoModules.NEP6.pdb
+C:\myDevelop\NeoSmartVault\Source\SmartVault.WPF\bin\Debug\NeoModules.Rest.pdb
+C:\myDevelop\NeoSmartVault\Source\SmartVault.WPF\bin\Debug\NeoModules.RPC.pdb
+C:\myDevelop\NeoSmartVault\Source\SmartVault.WPF\bin\Debug\NeoModules.NVM.pdb

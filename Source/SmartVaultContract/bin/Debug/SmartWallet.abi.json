@@ -1,5 +1,5 @@
 {
-    "hash":"0x79f413551019bfda0b183cca9f4296b4425537fa",
+    "hash":"0x4b49a30c537c5c005ca968a872b3c950897b07b1",
     "entrypoint":"Main",
     "functions":
     [
@@ -16,7 +16,7 @@
                     "type":"Array"
                 }
             ],
-            "returntype":"String"
+            "returntype":"Any"
         }
     ],
     "events":
